@@ -23,3 +23,24 @@ run dev
 -b swc 使用swc构建
 pnpm run start:dev -b swc 
 ```
+
+添加新模块
+```bash
+nest g module todos
+nest g controller todos
+nest g service todos
+
+│   └── todos
+│       ├── dto
+│       │   └── create-todo.dto.ts   // request
+│       ├── entities
+│       │   └── todo.entity.ts       // entity
+│       ├── todos.controller.ts
+│       ├── todos.module.ts
+│       └── todos.service.ts
+
+添加任务：POST http://localhost:3000/todos
+获取所有任务：GET http://localhost:3000/todos
+删除任务：DELETE http://localhost:3000/todos/1
+```
+

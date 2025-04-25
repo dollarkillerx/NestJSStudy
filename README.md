@@ -44,3 +44,9 @@ nest g service todos
 删除任务：DELETE http://localhost:3000/todos/1
 ```
 
+demo1-code // 内存版本
+demo1-pg   // pgsql 版本
+``` 
+pnpm install --save @nestjs/typeorm typeorm pg
+pnpm install @nestjs/core@latest @nestjs/common@latest @nestjs/typeorm@latest
+```

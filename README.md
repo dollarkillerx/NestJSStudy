@@ -45,8 +45,20 @@ nest g service todos
 ```
 
 demo1-code // 内存版本
+
+##### db
+
 demo1-pg   // pgsql 版本
+
 ``` 
 pnpm install --save @nestjs/typeorm typeorm pg
 pnpm install @nestjs/core@latest @nestjs/common@latest @nestjs/typeorm@latest
+```
+
+
+##### auth
+
+``` 
+npm install --save @nestjs/jwt passport-jwt @nestjs/passport passport bcryptjs
+npm install --save-dev @types/bcryptjs
 ```

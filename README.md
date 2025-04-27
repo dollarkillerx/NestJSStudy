@@ -59,6 +59,13 @@ pnpm install @nestjs/core@latest @nestjs/common@latest @nestjs/typeorm@latest
 ##### auth
 
 ``` 
-npm install --save @nestjs/jwt passport-jwt @nestjs/passport passport bcryptjs
-npm install --save-dev @types/bcryptjs
+pnpm install --save @nestjs/jwt passport-jwt @nestjs/passport passport bcryptjs
+pnpm install --save-dev @types/bcryptjs
+
+nest g module auth
+nest g service auth
+nest g controller auth
+nest g module users
+nest g service users
+nest g controller users
 ```
